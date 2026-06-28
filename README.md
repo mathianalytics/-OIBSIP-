@@ -59,6 +59,10 @@ Performed Exploratory Data Analysis (EDA) on a retail sales dataset using Python
 
 *Plots separate line charts for monthly and quarterly sales trends with markers and gridlines.
 
+##age and gender prediction using chart
+
+
+
 
 #Age Group Distribution
 
@@ -66,3 +70,11 @@ Age Group Distribution: A bar chart showing the number of customers in each age 
 
 Gender Breakdown: A pie chart displaying the percentage of customers by gender.
 Printed tables showing the counts for each age group and gender.
+
+##gender breakdown piechart
+
+<img width="562" height="447" alt="image" src="https://github.com/user-attachments/assets/57be1ccc-9865-44af-91bd-3f618aa5bd93" />
+
+##customer age group discussion
+
+<img width="1045" height="417" alt="image" src="https://github.com/user-attachments/assets/b14e0bc9-cf79-4a3b-a660-cc835cca18a4" />
