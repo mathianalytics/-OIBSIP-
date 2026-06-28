@@ -1,0 +1,40 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_csv("your_dataset.csv")
+
+# Convert Date column to datetime
+df['Date'] = pd.to_datetime(df['Date'])
+
+# Set Date as index
+df.set_index('Date', inplace=True)
+
+# -----------------------------
+# Monthly Sales Trend
+# -----------------------------
+monthly_sales = df['Sales'].resample('M').sum()
+
+plt.figure(figsize=(10,5))
+plt.plot(monthly_sales.index, monthly_sales.values, marker='o')
+plt.title('Monthly Sales Trend')
+plt.xlabel('Month')
+plt.ylabel('Sales')
+plt.grid(True)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+# -----------------------------
+# Quarterly Sales Trend
+# -----------------------------
+quarterly_sales = df['Sales'].resample('Q').sum()
+
+plt.figure(figsize=(10,5))
+plt.plot(quarterly_sales.index, quarterly_sales.values, marker='o')
+plt.title('Quarterly Sales Trend')
+plt.xlabel('Quarter')
+plt.ylabel('Sales')
+plt.grid(True)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
