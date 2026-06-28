@@ -1,0 +1,27 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load dataset
+df = pd.read_csv("your_dataset.csv")
+
+# Select numerical columns
+numeric_df = df.select_dtypes(include=['number'])
+
+# Compute correlation matrix
+correlation_matrix = numeric_df.corr()
+
+# Plot heatmap
+plt.figure(figsize=(10, 8))
+sns.heatmap(
+    correlation_matrix,
+    annot=True,
+    cmap="coolwarm",
+    fmt=".2f",
+    linewidths=0.5,
+    square=True
+)
+
+plt.title("Correlation Matrix Heatmap")
+plt.tight_layout()
+plt.show()
