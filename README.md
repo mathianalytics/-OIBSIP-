@@ -111,3 +111,15 @@ What the heatmap shows
 |  -0.80 to -1.00 | Strong negative relationship   |
 
 
+
+A good additional visualization that reveals a non-obvious insight is a scatter plot of Discount vs Profit. This helps identify whether offering higher discounts actually leads to lower profits, which may not be obvious from summary statistics alone.
+
+Additional Visualization: Discount vs Profit (Scatter Plot)
+Discount vs Profit
+
+Relationship between discount percentage and profit. The chart can reveal whether high discounts reduce profitability.
+
+
+
+
+<img width="1075" height="452" alt="image" src="https://github.com/user-attachments/assets/01122026-1a29-4195-89d7-5c23b92f3fda" />
