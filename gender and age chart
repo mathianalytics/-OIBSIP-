@@ -1,0 +1,49 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_csv("your_dataset.csv")
+
+# -----------------------------
+# Customer Age Group Distribution
+# -----------------------------
+# Create age groups
+age_bins = [0, 18, 25, 35, 45, 55, 65, 100]
+age_labels = ['<18', '18-25', '26-35', '36-45', '46-55', '56-65', '65+']
+
+df['Age Group'] = pd.cut(df['Age'], bins=age_bins, labels=age_labels, right=False)
+
+# Count customers in each age group
+age_distribution = df['Age Group'].value_counts().sort_index()
+
+plt.figure(figsize=(8,5))
+plt.bar(age_distribution.index.astype(str), age_distribution.values)
+plt.title('Customer Age Group Distribution')
+plt.xlabel('Age Group')
+plt.ylabel('Number of Customers')
+plt.grid(axis='y')
+plt.tight_layout()
+plt.show()
+
+# -----------------------------
+# Gender Breakdown
+# -----------------------------
+gender_distribution = df['Gender'].value_counts()
+
+plt.figure(figsize=(6,6))
+plt.pie(
+    gender_distribution.values,
+    labels=gender_distribution.index,
+    autopct='%1.1f%%',
+    startangle=90
+)
+plt.title('Gender Breakdown')
+plt.tight_layout()
+plt.show()
+
+# Print counts
+print("Age Group Distribution:")
+print(age_distribution)
+
+print("\nGender Breakdown:")
+print(gender_distribution)
