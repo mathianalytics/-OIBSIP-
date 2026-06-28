@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv("your_dataset.csv")
+
+# Select numerical columns
+numeric_df = df.select_dtypes(include='number')
+
+# Calculate descriptive statistics
+descriptive_stats = pd.DataFrame({
+    'Mean': numeric_df.mean(),
+    'Median': numeric_df.median(),
+    'Mode': numeric_df.mode().iloc[0],   # First mode if multiple modes exist
+    'Standard Deviation': numeric_df.std()
+})
+
+print(descriptive_stats)
