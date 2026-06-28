@@ -78,3 +78,36 @@ Printed tables showing the counts for each age group and gender.
 ##customer age group discussion
 
 <img width="1045" height="417" alt="image" src="https://github.com/user-attachments/assets/b14e0bc9-cf79-4a3b-a660-cc835cca18a4" />
+
+For Product Analysis, the standard visualizations are:
+
+Top 10 Best-Selling Products – Horizontal bar chart
+Revenue by Product Category – Vertical bar chart
+
+1. Top 10 Best-Selling Products
+
+   <img width="1107" height="430" alt="image" src="https://github.com/user-attachments/assets/01fb5ecd-d8de-43d0-8b97-2a4ba681cba4" />
+
+   2. Revenue by Product Category
+
+   <img width="1117" height="465" alt="image" src="https://github.com/user-attachments/assets/2527ab82-dcfd-4999-a3dd-608a64651440" />
+
+
+What the heatmap shows
++1.00 (Dark Red): Strong positive correlation
+
+0.00 (White): No linear correlation
+
+−1.00 (Dark Blue): Strong negative correlation
+
+| Correlation (r) | Interpretation                 |
+| --------------: | ------------------------------ |
+|    0.80 to 1.00 | Strong positive relationship   |
+|    0.50 to 0.79 | Moderate positive relationship |
+|    0.20 to 0.49 | Weak positive relationship     |
+|   -0.19 to 0.19 | Little or no relationship      |
+|  -0.20 to -0.49 | Weak negative relationship     |
+|  -0.50 to -0.79 | Moderate negative relationship |
+|  -0.80 to -1.00 | Strong negative relationship   |
+
+
