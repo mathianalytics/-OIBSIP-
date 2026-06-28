@@ -1,2 +1,22 @@
 print("Rows:", df.shape[0])
 print("Columns:", df.shape[1])
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv("your_dataset.csv")   # Replace with your file name
+
+# 1. Dataset shape (rows, columns)
+print("Dataset Shape:")
+print(df.shape)
+
+# 2. Column names
+print("\nColumns:")
+print(df.columns)
+
+# 3. Data types of each column
+print("\nData Types:")
+print(df.dtypes)
+
+# 4. First five rows
+print("\nFirst 5 Rows:")
+print(df.head())
