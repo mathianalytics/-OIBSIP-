@@ -23,6 +23,8 @@ Performed Exploratory Data Analysis (EDA) on a retail sales dataset using Python
 - Optimize inventory for top-selling products
 - Plan promotions during peak seasons
 
+#dataser.csv
+
 *Shape: Number of rows and columns (e.g., (1000, 15)).
 
 *Columns: List of all column names.
@@ -37,6 +39,7 @@ Performed Exploratory Data Analysis (EDA) on a retail sales dataset using Python
 
 *Total Null Values: Total missing values across the entire dataset.
 
+#mean,meadian,mode
 
 | Column     |   Mean | Median |   Mode | Standard Deviation |
 | ---------- | -----: | -----: | -----: | -----------------: |
@@ -44,6 +47,7 @@ Performed Exploratory Data Analysis (EDA) on a retail sales dataset using Python
 | Salary     | 52,300 | 50,000 | 45,000 |             11,450 |
 | Experience |    9.2 |      9 |      8 |               3.54 |
 
+#monthly and quartely sales
 
 *Converts the Date column to a datetime format. 
 
@@ -54,3 +58,11 @@ Performed Exploratory Data Analysis (EDA) on a retail sales dataset using Python
 *Aggregates sales by quarter using resample('Q').sum().
 
 *Plots separate line charts for monthly and quarterly sales trends with markers and gridlines.
+
+
+#Age Group Distribution
+
+Age Group Distribution: A bar chart showing the number of customers in each age group (e.g., <18, 18–25, 26–35, etc.).
+
+Gender Breakdown: A pie chart displaying the percentage of customers by gender.
+Printed tables showing the counts for each age group and gender.
